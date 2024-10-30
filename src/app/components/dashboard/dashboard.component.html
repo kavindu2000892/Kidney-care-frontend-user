@@ -1,0 +1,42 @@
+<style>
+  /* Ensure full-screen background image */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('picture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Center container content */
+  .outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+  }
+</style>
+
+<div class="outer">
+  <div class="container">
+    <hr>
+    <h1>User Dashboard</h1>
+    <hr>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-success" routerLink="/signs">Patient Vital Signs Management</button>
+      <button type="button" class="btn btn-success" routerLink="/visits">Patient Hemodialysis Visits Management</button>
+      <button type="button" class="btn btn-success" routerLink="/summery">Clinical Summary Report Management</button>
+      <button type="button" class="btn btn-success" routerLink="/upcoming">Upcoming Session Management</button>
+    </div>
+  </div>
+</div>
